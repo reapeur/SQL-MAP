@@ -1,3 +1,49 @@
+README — sqlmap (copie locale)
+=================================
+
+Description
+-----------
+Cette copie locale de `sqlmap` est clonée depuis le dépôt officiel et poussée vers votre repo GitHub.
+
+Emplacement
+-----------
+- Script principal : `sqlmap/sqlmap.py`
+
+Prérequis
+---------
+- Python 3.x (vous avez Python 3.11.9)
+
+Commandes utiles (PowerShell)
+-----------------------------
+- Aide courte :
+```powershell
+python .\sqlmap\sqlmap.py -h
+```
+- Aide complète :
+```powershell
+python .\sqlmap\sqlmap.py -hh
+```
+- Version :
+```powershell
+python .\sqlmap\sqlmap.py --version
+```
+- Exemple de commande sûre pour tests locaux (adapter l'URL à une cible de test dont vous avez l'autorisation) :
+```powershell
+python .\sqlmap\sqlmap.py -u "http://localhost/test.php?id=1" -p id --batch --level=1 --risk=1 --technique=BE
+```
+
+Remarques importantes
+---------------------
+- N'exécutez `sqlmap` que contre des systèmes pour lesquels vous avez une autorisation explicite. Scanner ou attaquer des services sans permission est illégal.
+- Le dépôt a été poussé vers : https://github.com/reapeur/SQL-MAP.git
+
+Support & documentation
+-----------------------
+Pour la documentation complète et les mises à jour, consultez https://sqlmap.org et le dépôt officiel GitHub.
+
+Si vous voulez que je :
+- configure `mine` comme `origin` (remplacer `origin`) — dites "remplacer" ;
+- ajoute un petit script d'exécution ou un raccourci PowerShell — dites "raccourci".
 # sqlmap ![](https://i.imgur.com/fe85aVR.png)
 
 [![.github/workflows/tests.yml](https://github.com/sqlmapproject/sqlmap/actions/workflows/tests.yml/badge.svg)](https://github.com/sqlmapproject/sqlmap/actions/workflows/tests.yml) [![Python 2.7|3.x](https://img.shields.io/badge/python-2.7|3.x-yellow.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://raw.githubusercontent.com/sqlmapproject/sqlmap/master/LICENSE) [![x](https://img.shields.io/badge/x-@sqlmap-blue.svg)](https://x.com/sqlmap)
